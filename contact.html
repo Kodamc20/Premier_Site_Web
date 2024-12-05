@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image 1.jpg" alt="Logo CESTOM">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Acceuil.html">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Evènement.html">Evénement</a></li>
+                <li><a href="rapport d'évènements.html">Rapport d'événements</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Contactez-nous</h2>
+            <p>Email: <a href="mailto:contact@cestom.com">cestommarakechinformation@gmail.com</a></p>
+            <p>Téléphone: +212 684-8811412</p>
+            <a href="https://www.instagram.com/https://www.instagram.com/cestom__marrakech?igsh=bmFlMmxyYmc1cGp1" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="50" height="50">
+           </a>
+        </section>
+
+        <section class="contact-form">
+            <h3>Formulaire de Contact</h3>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Nom et prénom:</label>
+                <input type="text" id="name" name="name" required placeholder="nom et prénom">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Communauté des Étudiants Togolais à Marrakech. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
