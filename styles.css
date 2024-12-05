@@ -1,19 +1,21 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
     background-color: #0055A4; 
     color: white;
-    padding: 20px;
+    padding: 20px 10px;
     text-align: center;
 }
 
 header img {
-    width: 150px;
+    width: 100px;
+    height: auto;
 }
 
 nav ul {
@@ -21,21 +23,36 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-nav ul li  {
-    display: inline;
-    margin-right: 20px;
-}
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 5px;
     transition: background 0.3s;
+}
+
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.about p {
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -48,16 +65,6 @@ footer {
 h2, h3 {
     color: #0055A4; 
     text-align: center;
-}
-
-main {
-    padding: 20px;
-}
-
-.slider img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
 button {
@@ -134,14 +141,42 @@ a:hover {
     background-color: #FF9900;
 }
 
-/* Footer */
-footer {
-    background-color: #0055A4;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
 
 footer p {
     margin: 0;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 100px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
 }
